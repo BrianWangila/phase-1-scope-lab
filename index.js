@@ -4,25 +4,24 @@ var customerName = "bob";
 console.log(customerName);
 
 function upperCaseCustomerName(){
-  return customerName.toUpperCase()
+  let cust =  customerName.toUpperCase()
+  customerName = cust
 }
-upperCaseCustomerName()
 
-let bestCustomer =  function setBestCustomer() {
-  return "not bob"
+
+function setBestCustomer() {
+  bestCustomer = "not bob"
 }
-console.log(bestCustomer())
+
 
 function overwriteBestCustomer(){
-  var customerName = "maybe bob"
-  return customerName
+  return bestCustomer = "maybe bob"
 }
-console.log(customerName);
 
 
-const leastFavoriteCustomer = "not Me"
+const leastFavoriteCustomer = "not Me";
 
-function changeLeastFavoriteCustomer(leastFavoriteCustomer){
-  return leastFavoriteCustomer;
+function changeLeastFavoriteCustomer(){
+  return leastFavoriteCustomer = "them";
 }
-console.log(changeLeastFavoriteCustomer("them"))
+changeLeastFavoriteCustomer()
